@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> About NQOLH</title>
+	<link rel="stylesheet" type="text/css" href="../Script_Css/NQOLH_style.css">
+	<link rel="shortcut icon" type="image/jpeg" href="../Script_Css/LogoAlt3.jpg" />
+	<link rel="stylesheet" href="../Script_Css/jquery-ui.css" />
+	<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+	<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+	<script type="text/javascript" src="../Script_Css/TAB.js"></script>
+	<script type="text/javascript" src="http://www.google.com/jsapi"></script>
+    <script src="http://maps.google.com/maps/api/js?key=AIzaSyCw5lbOSElOqXCALHbMg9P9fqUzJrnP7WY&sensor=false"> </script>
+    <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?libraries=places&sensor=false"></script>
+	<script src="../Script_Css/NPUscript.js"></script>
+    <script>
+	$(document).ready(function(){
+		$('#tabs').tabs({
+			active: 2
+		});
+					$('#tabs-14').tabs({
+      event: "click",collapsible: true,
+active: false 	    
+    });
+	})
+	</script>
+	<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+		ga('create', 'UA-44823935-1', 'gatech.edu');
+		ga('send', 'pageview');
+	</script>
+</head>
+
+<body onload="initialize22()">
+	<div id="main">
+		<a><img border="0" id="img" src="../Script_Css/logo.jpg" onclick="window.open('http://www.cgis.gatech.edu/','_blank')"/></a>
+		<label id="sitelabel" >Site Index &#953 Search</label>
+		<script>
+			(function() {
+				var cx = '005233585445751914129:bn6bopbnfaw';
+				var gcse = document.createElement('script');
+				gcse.type = 'text/javascript';
+				gcse.async = true;
+				gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+				'//www.google.com/cse/cse.js?cx=' + cx;
+				var s = document.getElementsByTagName('script')[0];
+				s.parentNode.insertBefore(gcse, s);
+			})();
+		</script>
+		<div style="width:0px;overflow:hidden;height:0px;"> <!-- if you use display:nonw here it doesn't work-->
+			<gcse:search></gcse:search>
+		</div>
+		<form id="searchbox_005233585445751914129:bn6bopbnfaw" action="">
+			<input value="005233585445751914129:bn6bopbnfaw" name="cx" type="hidden"/>
+			<input value="FORID:11" name="cof" type="hidden"/>
+			<input id="q" style="" name="q" size="15" type="text"/>
+			<button class="btn">Go</button>
+		</form>
+		<div id="titleline">
+			<label id="title"> Atlanta's Neighborhood Quality of Life & Health Project</label>	
+		</div>
+				
+		 <div id="tabs-3-44" style="font:16px 'Century Gothic', Sans-Serif; overflow:auto;">
+<p>Learn more about Atlanta's Neighborhood Planning Units, which are neighborhood-scale, citizen-advisory units formalized by the City of Atlanta.  Click on an NPU to get facts and statistics on geography, landmarks, health and quality of life. If you don't know your NPU, search for your neighborhood or address in the box below. 
+<input id="address2"  type="textbox" class="hint" value="Enter a neighborhood..." 
+					onfocus="if (this.className=='hint') { this.className = ''; this.value = ''; }"
+					onblur="if (this.value == '') { this.className = 'hint'; this.value = 'Enter a neighborhood...'; }">
+					<button id="search3"  type="button" value="SEARCH" onclick="codeAddress()" ><a>Search</a></button>
+					<button  id="reset" onclick="initialize22()" > <a>Reset</a></button>
+					<br><br><br>
+
+<label style="margin-left:130px;font-weight:bold"> Neighborhood Planning Units of Atlanta</label></p>
+					
+<div id="map-canvas22" style="width:500px;height:480px;margin-left:0px; margin-bottom: 0px; background-color:white;float:left"></div>
+ <ul style="float:left; margin-top:40px;">
+<li><a href="A/" style="margin-left:0px;color: blue">NPU A</a></li><br>
+<li><a href="B/" style="margin-left:0px; color: blue">NPU B</a></li><br>
+<li><a href="C/" style="margin-left:0px; color: blue">NPU C</a></li><br>
+<li><a href="D/" style="margin-left:0px; color: blue">NPU D</a></li><br>
+<li><a href="E/" style="margin-left:0px; color: blue">NPU E</a></li><br>
+<li><a href="F/" style="margin-left:0px; color: blue">NPU F</a></li><br>
+<li><a href="G/" style="margin-left:0px; color: blue">NPU G</a></li><br>
+<li><a href="H/" style="margin-left:0px; color: blue">NPU H</a></li><br>
+<li><a href="I/" style="margin-left:0px; color: blue">NPU I</a></li>
+ </ul>
+  <ul style="float:left; margin-left:50px; margin-top:40px;">
+<li><a href="J/" style="margin-left:0px; color: blue">NPU J</a></li><br>
+<li><a href="K/" style="margin-left:0px; color: blue">NPU K</a></li><br>
+<li><a href="L/" style="margin-left:0px; color: blue">NPU L</a></li><br>
+<li><a href="M/" style="margin-left:0px; color: blue">NPU M</a></li><br>
+<li><a href="N/" style="margin-left:0px; color: blue">NPU N</a></li><br>
+<li><a href="O/" style="margin-left:0px; color: blue">NPU O</a></li><br>
+<li><a href="P/" style="margin-left:0px; color: blue">NPU P</a></li><br>
+<li><a href="Q/" style="margin-left:0px; color: blue">NPU Q</a></li>
+ </ul>
+ <ul style="float:left; margin-left:50px; margin-top:40px;">
+<li><a href="R/" style="margin-left:0px; color: blue">NPU R</a></li><br>
+<li><a href="S/" style="margin-left:0px; color: blue">NPU S</a></li><br>
+<li><a href="T/" style="margin-left:0px; color: blue">NPU T</a></li><br>
+<li><a href="V/" style="margin-left:0px; color: blue">NPU V</a></li><br>
+<li><a href="W/" style="margin-left:0px; color: blue">NPU W</a></li><br>
+<li><a href="X/" style="margin-left:0px; color: blue">NPU X</a></li><br>
+<li><a href="Y/" style="margin-left:0px; color: blue">NPU Y</a></li><br>
+<li><a href="Z/" style="margin-left:0px; color: blue">NPU Z</a></li>
+</ul>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		<div id="blackline" ></div>
+		<div id="bottomline" style="position: relative; float:left;">
+			<a id="bottomline1" href="http://www.gatech.edu/legal/" target="_blank"> Legal &amp; Privacy Information </a>
+			<label id="bottomline2" > Contact Us </label>
+		</div>
+		</div>
+		
+		<div id="tabs" style="font:15px 'Century Gothic', Sans-Serif">
+			<ul>
+				<li onclick="window.open('../','_self')"><a href="#tabs-9">Home</a></li>
+				<li><a href="#tabs-10">About <label style="font:12px 'Century Gothic', Sans-Serif">&#9660</label></a></li>
+				<li onclick="window.open('../About_NPUs/','_self');initialize22()"><a href="#tabs-11">Find Your Neighborhood</a></li>
+				<li onclick="window.open('../Interactive_Map/','_self');initialize()"><a href="#tabs-12">Interactive Map</a></li>
+				<li onclick="window.open('../Data&Methods/','_self')"><a href="#tabs-13">Data & Methods <label style="font:12px 'Century Gothic', Sans-Serif">&#9660</label></a></li>
+				<li><a href="#tabs-14">Improve Your Neighborhood <label style="font:12px 'Century Gothic', Sans-Serif">&#9660</label></a></li>
+			</ul>
+
+			<div id="tabs-9" style="font:15px 'Century Gothic', Sans-Serif"></div>
+
+			<div id="tabs-10" style="font:15px 'Century Gothic', Sans-Serif">
+				<ul>
+					<li onclick="window.open('../Project/','_self')"><a href="#tabs-10-77" > Project </a></li>
+					<li onclick="window.open('../People/','_self')"><a href="#tabs-10-78" > People </a></li>
+					<li onclick="window.open('../Collaborators/','_self')"><a href="#tabs-10-79" > Collaborators </a></li>
+					<li onclick="window.open('../Presentations/','_self')"><a href="#tabs-10-80" > Presentations </a></li>
+					<li onclick="window.open('../Reference_Materials/','_self')"><a href="#tabs-10-81" > Publications </a></li>
+					<li onclick="window.open('../FAQ/','_self')"><a href="#tabs-10-82" > FAQ </a></li>
+				</ul>
+				<div id="tabs-10-77"></div>
+				<div id="tabs-10-78"></div>
+				<div id="tabs-10-79"></div>
+				<div id="tabs-10-80"></div>
+				<div id="tabs-10-81"></div>
+				<div id="tabs-10-82"></div>
+			</div>
+
+			<div id="tabs-11"></div>
+			
+			<div id="tabs-12"></div>
+			
+			<div id="tabs-13" style="font:15px 'Century Gothic', Sans-Serif">
+				<ul>
+					<li onclick="window.open('../Data&Methods/','_self')"><a href="#tabs-11-77" > Overview </a></li>
+					<li onclick="window.open('../Neighborhood_Planning_Unit/','_self')"><a href="#tabs-11-78" > Spatial Scale </a></li>
+					<li onclick="window.open('../NQoL_Index/','_self')"><a href="#tabs-11-79" > NQoL Index </a></li>
+					<li onclick="window.open('../NH_Index/','_self')"><a href="#tabs-11-80" >  NH Index</a></li>
+					<li onclick="window.open('../SEC_Index/','_self')"><a href="#tabs-11-81" >  SEC Index</a></li>
+				</ul>
+				<div id="tabs-11-77"></div>
+				<div id="tabs-11-78"></div>
+				<div id="tabs-11-79"></div>
+				<div id="tabs-11-80"></div>
+				<div id="tabs-11-81"></div>
+			</div>
+			<div id="tabs-14" style="font:15px 'Century Gothic', Sans-Serif">
+				<ul>
+					<li onclick="window.open('../Resources_by_Role/','_self')"><a href="#tabs-14-77" > Resources by Role </a></li>
+					<li onclick="window.open('../Resources_by_NPU/','_self')"><a href="#tabs-14-78" > Resources by NPU </a></li>
+					<li onclick="window.open('../Resources_by_Indicator/','_self')"><a href="#tabs-14-79" > Resources by Indicator </a></li>
+				</ul>
+				<div id="tabs-14-77"></div>
+				<div id="tabs-14-78"></div>
+				<div id="tabs-14-79"></div>
+			</div>
+		</div>
+			
+
+			
+
+		</div>
+	</div>
+	<link rel="stylesheet" type="text/css" href="Script_Css/Slidershow_engine/style1.css" />
+	<script type="text/javascript" src="Script_Css/Slidershow_engine/wowslider.js"></script>
+	<script type="text/javascript" src="Script_Css/Slidershow_engine/script.js"></script>
+</body>
+</html>
